@@ -1,0 +1,30 @@
+$default: #252525;
+$accent: #E0BEA2;
+$hoverColor: rgba(37, 37, 37, .7);
+
+%font-extralight{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+%font-light{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+%font-bold{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+%btn-click{
+    &:active{
+        background-color: red;
+    } 
+}

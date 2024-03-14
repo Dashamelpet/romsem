@@ -11,7 +11,6 @@ const avif = require('gulp-avif');
 const webp = require('gulp-webp');
 const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer'); 
-const svgSprite = require('gulp-svg-sprite'); 
 const include = require('gulp-include');
 
 
@@ -37,7 +36,7 @@ function styles() {
 function images(){
     return src (['app/images/src/**/*.*', '!app/images/src/*.svg'])
     .pipe(newer('app/images'))
-    .pipe(avif({ quality: 50}))
+    .pipe(avif({ quality: 90}))
     .pipe(src('app/images/src/**/*.*'))
     .pipe(newer('app/images'))
     .pipe(webp())
@@ -47,21 +46,12 @@ function images(){
     .pipe(dest('app/images'))
 }
 
-function sprite() {
-    return src('app/images/*.svg')
-    .pipe(svgSprite({
-        mode:{
-            stack: {
-                sprite: '../sprite.svg',
-                example: true
-            }
-        }
-    }))
-    .pipe(dest('app/images'))
-}
+
 
 function scripts() { 
-    return src(['node_modules/slick-carousel/slick/slick.js',
+    return src([
+    'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/slick-carousel/slick/slick.js',
     'app/js/main.js'])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -90,8 +80,6 @@ function building() {
         'app/images/*.*',
         'app/images/content/*.*',
         '!app/images/*.svg',
-        '!app/images/stack/sprite.stack.html',
-        'app/images/sprite.svg',
         'app/fonts/*.*',
         'app/js/main.min.js',
         'app/**/*.html'
@@ -108,7 +96,6 @@ function cleanDist() {
 exports.styles = styles;
 exports.images = images;
 exports.pages = pages;
-exports.sprite = sprite;
 exports.scripts = scripts;
 exports.watching = watching;
 exports.building = building;

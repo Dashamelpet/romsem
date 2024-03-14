@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header-main">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header-box">
+                        <nav class="menu header__left dropdown">
+                            <button class="menu__btn dropdown-btn">
+                                <span class="menu__btn-line"></span>
+                            </button>
+                            <ul class="menu__list dropdown-content menu-drop__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__item-link">ОПЛАТА И ДОСТАВКА</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__item-link">УСЛОВИЯ ВОЗВРАТА</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__item-link">КОНТАКТЫ</a>
+                                </li>
+                            </ul>
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__item-link">NEW</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="#" class="menu__item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="#" class="menu__item-link">О НАС</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+
+                    <div class="header__center">
+                        <a href="#" class="logo">
+                            <img src="images/logo-main.svg" alt="">
+                    </div>
+                    </a>
+                    <div class="header__right">
+                        <div class="right-drop">
+                            <div class="right-drop__wrapper dropdown">
+                                <button class="right-drop__btn dropdown-btn" id="selected-lang"><span>RU</span> </button>
+                                <div class="right-drop__menu dropdown-content">
+                                    <a class="menu-lang__item right-drop__menu-item " href="#">UA</a>
+                                    <a class="menu-lang__item right-drop__menu-item" href="#">EN</a>
+                                </div>
+                            </div>
+                            <div class="right-drop__wrapper dropdown">
+                                <button class="right-drop__btn dropdown-btn"><span class="drop__current" id="selected-currency">UAH</span> </button>
+                                <div class="right-drop__menu dropdown-content">
+                                    <div class="dropdown-list__item right-drop__menu-item hide">UAH
+                                    </div>
+                                    <div class="dropdown-list__item right-drop__menu-item" >USD</div>
+                                    <div class="dropdown-list__item right-drop__menu-item" >EUR</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="header__userlist">
+                            <li class="header__userlist-item">
+                                <form class="header__userlist-link header__search">
+                                    <input class="header__search-input" type="text" placeholder="Введите ваш запрос">
+                                    <span class="header__search-btn--close"><img src="images/search-black.svg"
+                                            alt=""></span>
+                                    <button class="header__search-btn"><svg width="25" height="25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_100_26)">
+                                                <path
+                                                    d="M19.729 17.989L25 23.259 23.259 25l-5.27-5.271a11.026 11.026 0 01-6.913 2.423C4.962 22.152 0 17.19 0 11.076 0 4.962 4.962 0 11.076 0c6.114 0 11.076 4.962 11.076 11.076a11.026 11.026 0 01-2.423 6.913zm-2.469-.913a8.587 8.587 0 002.43-6 8.612 8.612 0 00-8.614-8.615 8.612 8.612 0 00-8.615 8.615 8.612 8.612 0 008.615 8.615 8.587 8.587 0 006-2.43l.184-.185z"
+                                                    fill="#000" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_100_26">
+                                                    <path fill="#000" d="M0 0h25v25H0z" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg></button>
+                                </form>
+
+
+                            </li>
+                            <li class="header__userlist-item">
+                                <a href="#" class="header__userlist-link">
+                                    <svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_100_31)">
+                                            <path
+                                                d="M2.5 25a9.524 9.524 0 0119.048 0h-2.381A7.143 7.143 0 004.88 25H2.5zm9.524-10.714A7.14 7.14 0 014.88 7.143 7.14 7.14 0 0112.024 0a7.14 7.14 0 017.143 7.143 7.14 7.14 0 01-7.143 7.143zm0-2.381a4.76 4.76 0 004.762-4.762 4.76 4.76 0 00-4.762-4.762 4.76 4.76 0 00-4.762 4.762 4.76 4.76 0 004.762 4.762z"
+                                                fill="#E0BEA2" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_100_31">
+                                                <path fill="#E0BEA2" d="M0 0h25v25H0z" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__userlist-item">
+                                <a href="#" class="header__userlist-link">
+                                    <svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_100_34)">
+                                            <path
+                                                d="M12.501 3.161c2.936-2.636 7.474-2.549 10.302.285a7.5 7.5 0 01.295 10.295l-10.6 10.615L1.902 13.74a7.5 7.5 0 0110.6-10.58zm8.532 2.051a4.997 4.997 0 00-6.862-.19l-1.669 1.497-1.67-1.497a4.999 4.999 0 00-6.867.193 4.999 4.999 0 00-.24 6.813l8.775 8.79 8.775-8.788a5 5 0 00-.242-6.818z"
+                                                fill="#E0BEA2" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_100_34">
+                                                <path fill="#E0BEA2" d="M0 0h25v25H0z" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__userlist-item">
+                                <a href="#" class="header__userlist-link">
+                                    <svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_100_37)">
+                                            <path
+                                                d="M3.817 5.48L0 1.666 1.665 0l3.816 3.817h17.937a1.177 1.177 0 011.128 1.514l-2.825 9.415a1.177 1.177 0 01-1.127.84H6.17v2.353h12.946v2.354H4.993a1.177 1.177 0 01-1.176-1.177V5.48zm2.353.69v7.061h13.548l2.119-7.06H6.17zM5.582 25a1.766 1.766 0 110-3.531 1.766 1.766 0 010 3.531zm14.122 0a1.765 1.765 0 110-3.53 1.765 1.765 0 010 3.53z"
+                                                fill="#E0BEA2" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_100_37">
+                                                <path fill="#E0BEA2" d="M0 0h25v25H0z" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </header>
+
+<main>
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a> </li>
+                <li class="breadcrumbs__item"><a href="#">Каталог</a> </li>
+            </ul>
+        </div>
+    </div>
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__inner">
+                <aside class="aside-filter">
+                    <h4 class="aside-filter__title">Каталог</h4>
+                    <ul class="aside-filter__list">
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">New</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Bestsellers</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Верхняя одежда</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Шубы</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Тренчи</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Пальто</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Пуховики и жилеты</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Костюмы</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Жакеты</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Платья</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Рубашки и блузы</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Юбки</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Футболки и топы</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Аксессуары</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Sale</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Summer</button>
+                        </li>
+                        <li class="aside-filter__item">
+                            <button class="aside-filter__link">Посмотреть всё</button>
+                        </li>
+                    </ul>
+                </aside>
+                <div class="catalog__content">
+                    <div class="content-sort">
+                        <div class="content-sort__list">
+                            <div class="content-sort__item dropdown">
+                                <button class="content-sort__btn  dropdown-btn" ><span class="drop__current">Размер</span> </button>
+                                <div class="content-sort__drop  dropdown-content">
+                                    <p class="content-sort__drop-item dropdown-list__item">XXS</p>
+                                    <p class="content-sort__drop-item dropdown-list__item">XS</p>
+                                    <p class="content-sort__drop-item dropdown-list__item">S</p>
+                                </div>
+                            </div>
+                            <div class="content-sort__item dropdown">
+                                <button class="content-sort__btn  dropdown-btn" ><span class="drop__current">Цвет</span> </button>
+                                <div class="content-sort__drop  dropdown-content">
+                                    <p class="content-sort__drop-item dropdown-list__item">black</p>
+                                    <p class="content-sort__drop-item dropdown-list__item">white</p>
+                                    <p class="content-sort__drop-item dropdown-list__item">blue</p>
+                                </div>
+                            </div>
+                            <div class="content-sort__item dropdown">
+                                <button class="content-sort__btn  dropdown-btn" ><span class="drop__current">Цена</span> </button>
+                                <div class="content-sort__drop  dropdown-content">
+                                    <p class="content-sort__drop-item dropdown-list__item">1000</p>
+                                    <p class="content-sort__drop-item dropdown-list__item">5000</p>
+                                    <p class="content-sort__drop-item dropdown-list__item">10000</p>
+                                </div>
+                            </div>
+                            <div class="content-sort__item dropdown">
+                                <button class="content-sort__btn  dropdown-btn" ><span class="drop__current">Сортировать по</span> </button>
+                                <div class="content-sort__drop  dropdown-content">
+                                    <p class="content-sort__drop-item dropdown-list__item">Цена</p>
+                                    <p class="content-sort__drop-item dropdown-list__item">Цвет</p>
+                                    <p class="content-sort__drop-item dropdown-list__item">Размер</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__content-list">
+                        <div class="catalog-item__wrapper">
+                            <button class="catalog-item__favorite">
+                                <img src="images/catalog-favorite.svg" alt="">
+                            </button>
+                            <a href="#" class="catalog-item catalog-item--new">
+                                <picture class="catalog-item__img">
+                                    <source type="image/avif" srcset="images/content/category-1.avif" />
+                                    <source type="image/webp" srcset="images/content/category-1.webp" />
+                                    <img src="images/content/category-1.png">
+                                </picture>
+                                <p class="catalog-item__title">Белая куртка</p>
+                                <p class="catalog-item__price">2900  грн</p>
+                                <div class="catalog-item__size-list">
+                                    <p class="catalog-item__size-item">XXS</p>
+                                    <p class="catalog-item__size-item">XS</p>
+                                    <p class="catalog-item__size-item">S</p>
+                                    <p class="catalog-item__size-item">M</p>
+                                    <p class="catalog-item__size-item">L</p>
+                                </div>
+                                <div class="catalog-item__color-list">
+                                    <p class="catalog-item__color-item"></p>
+                                    <p class="catalog-item__color-item"></p>
+                                    <p class="catalog-item__color-item"></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__item">
+                <h4 class="footer__item-title">КОМПАНИЯ</h4>
+                <ul class="footer__item-list">
+                    <li class="footer__list-item">
+                        <a href="#">О нас</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h4 class="footer__item-title">ПОЛЕЗНОЕ</h4>
+                <ul class="footer__item-list">
+                    <li class="footer__list-item">
+                        <a href="#">Оплата и доставка</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#">Условия возврата</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#">Бонусная система</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h4 class="footer__item-title">ПОКУПАТЕЛЮ</h4>
+                <ul class="footer__item-list">
+                    <li class="footer__list-item">
+                        <a href="#">Избранное</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#">Публичная оферта</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h4 class="footer__item-title">КОНТАКТЫ</h4>
+                <ul class="footer__item-list">
+                    <li class="footer__list-item">
+                        <div class="footer__social">
+                           <a class="footer__social-link" href="#">
+                            <img src="images/instagram.svg" alt="">
+                           </a> 
+                           <a class="footer__social-link" href="#">
+                            <img src="images/telegram.svg" alt="">
+                           </a> 
+                        </div>
+                        
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="emailto:info@yanki.com">info@yanki.com</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="tel:380730963644:">+38(073) 096 36 44</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>©️ 2021 Yanki. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+</div>
+<script  src ="https://code.jquery.com/jquery-3.7.1.min.js "></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,13 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
-        
-    </header>
+    <div class="wrapper">
+        <header class="header header-fixed">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header-box">
+                        <nav class="menu header__left dropdown">
+                            <button class="menu__btn dropdown-btn">
+                                <span class="menu__btn-line"></span>
+                            </button>
+                            <ul class="menu__list dropdown-content menu-drop__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__item-link">ОПЛАТА И ДОСТАВКА</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__item-link">УСЛОВИЯ ВОЗВРАТА</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__item-link">КОНТАКТЫ</a>
+                                </li>
+                            </ul>
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__item-link">NEW</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="#" class="menu__item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a href="#" class="menu__item-link">О НАС</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+
+                    <div class="header__center">
+                        <a href="#" class="logo">
+                            <img src="images/logo.svg" alt="">
+                    </div>
+                    </a>
+                    <div class="header__right">
+                        <div class="right-drop">
+                            <div class="right-drop__wrapper dropdown">
+                                <button class="right-drop__btn dropdown-btn" id="selected-lang"><span >RU</span> </button>
+                                <div class="right-drop__menu dropdown-content">
+                                    <a class="menu-lang__item right-drop__menu-item " href="#">UA</a>
+                                    <a class="menu-lang__item right-drop__menu-item" href="#">EN</a>
+                                </div>
+                            </div>
+                            <div class="right-drop__wrapper dropdown">
+                                <button class="right-drop__btn dropdown-btn" ><span class="drop__current" id="selected-currency">UAH</span> </button>
+                                <div class="right-drop__menu dropdown-content">
+                                    <div class="dropdown-list__item right-drop__menu-item hide">UAH
+                                    </div>
+                                    <div class="dropdown-list__item right-drop__menu-item" >USD</div>
+                                    <div class="dropdown-list__item right-drop__menu-item" >EUR</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="header__userlist">
+                            <li class="header__userlist-item">
+                                <form class="header__userlist-link header__search">
+                                    <input class="header__search-input" type="text" placeholder="Введите ваш запрос">
+                                    <span class="header__search-btn--close"><img src="images/search-black.svg"
+                                            alt=""></span>
+                                    <button class="header__search-btn"><img src="images/search.svg" alt=""></button>
+                                </form>
+
+
+                            </li>
+                            <li class="header__userlist-item">
+                                <a href="#" class="header__userlist-link">
+                                    <img src="images/user.svg" alt=""></a>
+                            </li>
+                            <li class="header__userlist-item">
+                                <a href="#" class="header__userlist-link">
+                                    <img src="images/favorite.svg" alt=""></a>
+                            </li>
+                            <li class="header__userlist-item">
+                                <a href="#" class="header__userlist-link">
+                                    <img src="images/basket.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </header>
