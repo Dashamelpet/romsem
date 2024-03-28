@@ -1,0 +1,648 @@
+<!--= include header-main.html -->
+
+<main>
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a> </li>
+                <li class="breadcrumbs__item"><a href="#">Каталог</a> </li>
+                <li class="breadcrumbs__item"><a href="#">Пальто</a> </li>
+                <li class="breadcrumbs__item"><a href="#">Кремовое пальто</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="product page-section">
+        <div class="container">
+            <div class="product__wrapper">
+                <div class="product__left">
+                    <div class="product__choose-images">
+                        <button class="product__choose-btn product__choose-btn--active " data-button="image-1">
+                            <picture>
+                                <source type="image/avif" srcset="images/content/product-1.avif" />
+                                <source type="image/webp" srcset="images/content/product-1.webp" />
+                                <img class="product__chose-img" src="images/content/product-1.jpeg">
+                            </picture>
+                        </button>
+                        <button class="product__choose-btn" data-button="image-2">
+                            <picture>
+                                <source type="image/avif" srcset="images/content/product-2.avif" />
+                                <source type="image/webp" srcset="images/content/product-2.webp" />
+                                <img class="product__chose-img" src="images/content/product-2.jpeg">
+                            </picture>
+                        </button>
+                        <button class="product__choose-btn" data-button="image-3">
+                            <picture>
+                                <source type="image/avif" srcset="images/content/product-3.avif" />
+                                <source type="image/webp" srcset="images/content/product-3.webp" />
+                                <img class="product__chose-img" src="images/content/product-3.jpeg">
+                            </picture>
+                        </button>
+                        <button class="product__choose-btn" data-button="image-4">
+                            <picture>
+                                <source type="image/avif" srcset="images/content/product-4.avif" />
+                                <source type="image/webp" srcset="images/content/product-4.webp" />
+                                <img class="product__chose-img" src="images/content/product-4.jpeg">
+                            </picture>
+                        </button>
+                        <button class="product__choose-btn" data-button="image-5">
+                            <picture>
+                                <source type="image/avif" srcset="images/content/product-5.avif" />
+                                <source type="image/webp" srcset="images/content/product-5.webp" />
+                                <img class="product__chose-img" src="images/content/product-5.jpeg">
+                            </picture>
+                        </button>
+                        <button class="product__choose-btn" data-button="image-6">
+                            <picture>
+                                <source type="image/avif" srcset="images/content/product-6.avif" />
+                                <source type="image/webp" srcset="images/content/product-6.webp" />
+                                <img class="product__chose-img" src="images/content/product-6.jpeg">
+                            </picture>
+                        </button>
+
+                    </div>
+                    <div class="product__images">
+                        <picture>
+                            <source type="image/avif" srcset="images/content/product-1.avif" />
+                            <source type="image/webp" srcset="images/content/product-1.webp" />
+                            <img class="product__img product__img--active image-1" src="images/content/product-1.jpeg">
+                        </picture>
+                        <picture>
+                            <source type="image/avif" srcset="images/content/product-2.avif" />
+                            <source type="image/webp" srcset="images/content/product-2.webp" />
+                            <img class="product__img image-2" src="images/content/product-2.jpeg">
+                        </picture>
+                        <picture>
+                            <source type="image/avif" srcset="images/content/product-3.avif" />
+                            <source type="image/webp" srcset="images/content/product-3.webp" />
+                            <img class="product__img image-3" src="images/content/product-3.jpeg">
+                        </picture>
+                        <picture>
+                            <source type="image/avif" srcset="images/content/product-4.avif" />
+                            <source type="image/webp" srcset="images/content/product-4.webp" />
+                            <img class="product__img image-4" src="images/content/product-4.jpeg">
+                        </picture>
+                        <picture>
+                            <source type="image/avif" srcset="images/content/product-5.avif" />
+                            <source type="image/webp" srcset="images/content/product-5.webp" />
+                            <img class="product__img image-5" src="images/content/product-5.jpeg">
+                        </picture>
+                        <picture>
+                            <source type="image/avif" srcset="images/content/product-6.avif" />
+                            <source type="image/webp" srcset="images/content/product-6.webp" />
+                            <img class="product__img image-6" src="images/content/product-6.jpeg">
+                        </picture>
+                    </div>
+                </div>
+                <div class="product__right">
+                    <h4 class="product__title">Кремовое пальто</h4>
+                    <div class="product__price">3150 грн</div>
+                    <div class="product__color">
+                        <button class="product__color-item white-bg " data-button="white-color"></button>
+                        <button class="product__color-item product__color-item--active yellow-bg"
+                            data-button="yellow-color"></button>
+                        <button class="product__color-item blue-bg" data-button="blue-color"></button>
+                    </div>
+                    <div class="product__color-description">
+                        <p
+                            class="yellow-color  product__color-description-item product__color-description-item--active">
+                            Цвет: Кофе с молоком меланж</p>
+                        <p class="white-color product__color-description-item"> Цвет: Белый</p>
+                        <p class="blue-color product__color-description-item">Цвет: Синий</p>
+                    </div>
+                    <div class="product__form">
+                        <div class="product__form dropdown">
+                            <button class="product__form-select  dropdown-btn"><span class="drop__current">Выберите
+                                    размеры</span> </button>
+                            <div class="product__form-drop  dropdown-content">
+                                <p class="product__form-item dropdown-list__item">XXS</p>
+                                <p class="product__form-item dropdown-list__item">XS</p>
+                                <p class="product__form-item dropdown-list__item">S</p>
+                            </div>
+                        </div>
+                        <div class="product__form--buttons">
+                            <button class="product__form-btn product__backet">В КОРЗИНУ</button>
+                            <button class="product__form-btn product__favorite"><span>В ИЗБРАННОЕ</span> </button>
+                        </div>
+
+                    </div>
+                    <div class="product-more">
+                        <p class="product-more__title">Подробности</p>
+                        <div class="product-more__box ">
+                            <div class="product-description dropdown">
+                                <p class="product-description__btn dropdown-btn">Обмеры и описание</p>
+                                <p class="product-description__content dropdown-content">Длинный, приталенный</p>
+                            </div>
+                            <div class="product-care dropdown">
+                                <p class="product-care__btn dropdown-btn">Состав и уход</p>
+                                <p class="product-care__content dropdown-content">Состав: 50% Шерсть, 50% Полиэстер <br>
+                                    <br> Подкладка: 100% Полиэстер
+                                    <br> Утеплитель: 90% Пух, 10% Перо
+                                    <br> - Не стирать
+                                    <br> - Гладить при температуре утюга до 110°C
+                                    <br> - Не отбеливать
+                                    <br> - Сухая чистка (химчистка)
+                                    <br> - Барабанная сушка запрещена</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="additions page-section">
+        <div class="container">
+            <div class="additions__wrapper">
+                <h4 class="additions__title title">Весь образ</h4>
+                <div class="additions__all">
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-4.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-4.webp" />
+                                <img src="images/content/catalog-4.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span> </p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-3.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-3.webp" />
+                                <img src="images/content/catalog-3.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span></p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="additions__wrapper">
+                <h4 class="additions__title title">Дополните образ</h4>
+                <div class="additions__add">
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-4.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-4.webp" />
+                                <img src="images/content/catalog-4.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span> </p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-2.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-2.webp" />
+                                <img src="images/content/catalog-2.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span> </p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item  white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-1.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-1.webp" />
+                                <img src="images/content/catalog-1.jpeg">
+                            <p class="catalog-item__title"><span>Белая куртка</span> </p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-3.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-3.webp" />
+                                <img src="images/content/catalog-3.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span></p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-4.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-4.webp" />
+                                <img src="images/content/catalog-4.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span> </p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-2.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-2.webp" />
+                                <img src="images/content/catalog-2.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span> </p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item  white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-1.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-1.webp" />
+                                <img src="images/content/catalog-1.jpeg">
+                            <p class="catalog-item__title"><span>Белая куртка</span> </p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-3.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-3.webp" />
+                                <img src="images/content/catalog-3.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span></p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="additions__wrapper">
+                <h4 class="additions__title title">Вам может понравиться</h4>
+                <div class="additions__like">
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-4.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-4.webp" />
+                                <img src="images/content/catalog-4.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span> </p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-2.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-2.webp" />
+                                <img src="images/content/catalog-2.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span> </p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item  white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-1.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-1.webp" />
+                                <img src="images/content/catalog-1.jpeg">
+                            <p class="catalog-item__title"><span>Белая куртка</span> </p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-3.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-3.webp" />
+                                <img src="images/content/catalog-3.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span></p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-4.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-4.webp" />
+                                <img src="images/content/catalog-4.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span> </p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-3.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-3.webp" />
+                                <img src="images/content/catalog-3.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span></p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="additions__wrapper">
+                <h4 class="additions__title title">Вы недавно смотрели</h4>
+                <div class="additions__viewed">
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-4.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-4.webp" />
+                                <img src="images/content/catalog-4.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span> </p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <button class="catalog-item__favorite">
+                            <img src="images/catalog-favorite.svg" alt="">
+                        </button>
+                        <a href="#" class="catalog-item__link catalog-item--new">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-3.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-3.webp" />
+                                <img src="images/content/catalog-3.jpeg">
+                            </picture>
+                            <p class="catalog-item__title"><span>Белая куртка</span></p>
+                            <p class="catalog-item__price">2900  грн</p>
+                            <div class="catalog-item__size-list">
+                                <p class="catalog-item__size-item">XXS</p>
+                                <p class="catalog-item__size-item">XS</p>
+                                <p class="catalog-item__size-item">S</p>
+                                <p class="catalog-item__size-item">M</p>
+                                <p class="catalog-item__size-item">L</p>
+                            </div>
+                            <div class="catalog-item__color-list">
+                                <p class="catalog-item__color-item white-bg"></p>
+                                <p class="catalog-item__color-item blue-bg"></p>
+                                <p class="catalog-item__color-item yellow-bg"></p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</main>
+<!--= include footer.html -->

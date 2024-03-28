@@ -84,3 +84,19 @@ h2{
 main{
     flex-grow: 1;
 }
+
+.white-bg{
+    background-color: #fff;
+}
+.yellow-bg{
+    background-color: #F1DDAA;
+}
+.blue-bg{
+    background-color: #6F83A4;
+}
+
+.title{
+    font-size: 20px;
+    @extend %font-light;
+    margin-bottom: 25px;
+}

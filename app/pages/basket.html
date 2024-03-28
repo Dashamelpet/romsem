@@ -1,0 +1,199 @@
+<!--= include header-main.html -->
+
+<main>
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Главная</a> </li>
+                <li class="breadcrumbs__item"><a href="#">Корзина</a> </li>
+            </ul>
+        </div>
+    </div>
+    <section class="order page-section">
+        <div class="container">
+            <h4 class="order__title title">Ваш заказ</h4>
+            <div class="order__products" id="basket">
+                <div class="order__products-item basket__item">
+                    <div class="order__products-article">
+                        <a href="#" class="order__products-img">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-1.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-1.webp" />
+                                <img src="images/content/catalog-1.jpeg">
+                            </picture>
+                        </a>
+                        <div class="order__products-name">
+                            <p class="order__products-numer">арт. 1589956</p>
+                            <a href="#" class="order__products-title">Белая куртка</a>
+                        </div>
+                    </div>
+                    <div class="order__products-color">
+                        <p class="order__products-color-item white-bg"></p>
+                    </div>
+                    <div class="order__products-size dropdown">
+                        <button class="order__size-btn  dropdown-btn"><span class="drop__current">XXS</span> </button>
+                        <div class="order__size-drop  dropdown-content">
+                            <p class="order__size-item dropdown-list__item">XXS</p>
+                            <p class="order__size-item dropdown-list__item">XS</p>
+                            <p class="order__size-item dropdown-list__item">S</p>
+                        </div>
+                    </div>
+                    <div class="order__products-quantity  count">
+                        <button class="btn_minus">-</button>
+                        <input type="text" class=" input" value="1" data-price="2900">
+                        <button class="btn_plus">+</button>
+                    </div>
+                    <div class="order__products-right">
+                        <span class="price-hide price">2900</span>
+                        <div class="order__products-price subtotal">2 900 грн</div>
+                        <button class="order__products-delete">
+                            <img class="remove" src="images/delete.svg" alt="">
+                        </button>
+                    </div>
+
+                </div>
+                <div class="order__products-item basket__item">
+                    <div class="order__products-article">
+                        <a href="#" class="order__products-img">
+                            <picture class="catalog-item__img">
+                                <source type="image/avif" srcset="images/content/catalog-4.avif" />
+                                <source type="image/webp" srcset="images/content/catalog-4.webp" />
+                                <img src="images/content/catalog-4.jpeg">
+                            </picture>
+                        </a>
+                        <div class="order__products-name">
+                            <p class="order__products-numer">арт. 1589956</p>
+                            <a href="#" class="order__products-title">Синяя парка</a>
+                        </div>
+                    </div>
+                    <div class="order__products-color">
+                        <p class="order__products-color-item blue-bg"></p>
+                    </div>
+                    <div class="order__products-size dropdown">
+                        <button class="order__size-btn  dropdown-btn"><span class="drop__current">XXS</span> </button>
+                        <div class="order__size-drop  dropdown-content">
+                            <p class="order__size-item dropdown-list__item">XXS</p>
+                            <p class="order__size-item dropdown-list__item">XS</p>
+                            <p class="order__size-item dropdown-list__item">S</p>
+                        </div>
+                    </div>
+                    <div class="order__products-quantity count">
+                        <button class="btn_minus">-</button>
+                        <input type="text" class="input" value="1" data-price="3150">
+                        <button class="btn_plus">+</button>
+                    </div>
+                    <div class="order__products-right">
+                        <span class="price-hide price">3150</span>
+                        <div class="order__products-price subtotal">3 150 грн</div>
+                        <button class="order__products-delete ">
+                            <img class="remove" src="images/delete.svg" alt="">
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="order__products-total__price">К оплате:<span id="total-price"></span> грн</div>
+        </div>
+    </section>
+
+    <section class="cart page-section">
+        <div class="container">
+            <h4 class="cart__title title">Оформление заказа</h4>
+            <div class="cart__wrapper">
+                <div class="cart__left">
+                    <form class="checkout-form">
+                        <p class="checkout-form__title">Персональные данные:</p>
+                        <div class="checkout-form__fields">
+                            <input class="checkout-form__input" type="text" placeholder="Ваше имя*" required>
+                            <input class="checkout-form__input" type="text" placeholder="Ваша фамилия*" required>
+                            <input class="checkout-form__input" type="email" placeholder="Ваш e-mail*" required>
+                            <input class="checkout-form__input" type="text" id="phone-mask" placeholder="Ваш телефон*"
+                                required>
+                        </div>
+                        <p class="checkout-form__title">Способ доставки:</p>
+                        <div class="checkout-form__fields">
+                            <div class="checkout-form__fields-left">
+                                <p class="checkout-form__fields-title">По Украине:</p>
+                                <div class="checkout-form__radio">
+                                    <input class="custom-radio" name="derivery" type="radio" id="derivery-1" checked>
+                                    <label for="derivery-1">Самовывоз - вул. Большая Васильковская 14(м. Льва
+                                        Толстого)</label>
+                                </div>
+                                <div class="checkout-form__radio">
+                                    <input class="custom-radio" name="derivery" type="radio" id="derivery-2">
+                                    <label for="derivery-2">Новая Почта</label>
+                                </div>
+                            </div>
+                            <div class="checkout-form__fields-right">
+                                <p class="checkout-form__fields-title">Международная доставка:</p>
+                                <div class="checkout-form__radio">
+                                    <input class="custom-radio" name="derivery" type="radio" id="derivery-3" checked>
+                                    <label for="derivery-3">Украпочта / 1-3 недели / 30$</label>
+                                </div>
+                                <div class="checkout-form__radio">
+                                    <input class="custom-radio" name="derivery" type="radio" id="derivery-4">
+                                    <label for="derivery-4">DHL / 3-7 дней / 60$</label>
+                                </div>
+                            </div>
+                            <p class="checkout-form__title">Адрес доставки:</p>
+                            <div class="checkout-form__fields">
+                                <input class="checkout-form__input" type="text" placeholder="Город*">
+                                <input class="checkout-form__input" type="text" placeholder="Отделение почты*">
+                            </div>
+                            <p class="checkout-form__title">Вы можете оплатить покупку одним из ниже перечисленных
+                                способов:</p>
+                            <div class="checkout-form__fields">
+                                <div class="checkout-form__radio form__radio-pay">
+                                    <input class="custom-radio" name="pay" type="radio" id="pay-1">
+                                    <label class="pay-privat" for="pay-1">Полная предоплата через Приват 24</label>
+                                </div>
+                                <div class="checkout-form__radio  form__radio-pay">
+                                    <input class="custom-radio" name="pay" type="radio" id="pay-2" checked>
+                                    <label for="pay-2">Наложенным платежом в отделении Новой Почты</label>
+                                </div>
+                                <div class="checkout-form__radio form__radio-pay">
+                                    <input class="custom-radio" name="pay" type="radio" id="pay-3">
+                                    <label class="pay-visa" for="pay-3">Денежным переводом Visa/MasterCard</label>
+                                </div>
+                            </div>
+                            <p class="checkout-form__title">Использование бонусного счёта:</p>
+                            <div class="checkout-form__fields">
+                                <input class="checkout-form__bonus checkout-form__input" id="sum-bonus" type="text" placeholder="Сумма списания бонусов*">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="cart__right">
+                    <div class="cart__actions">
+                        <div class="cart__actions-buttons">
+                            <a href="#" class="cart__user-room">Войти в личный кабинет</a>
+                            <a href="#" class=" cart__actions-btn">УСЛОВИЯ ДОСТАВКИ</a>
+                            <a href="#" class=" cart__actions-btn">УСЛОВИЯ ОБМЕНА И ВОЗВРАТА</a>
+                            <a href="#" class=" cart__actions-btn">ИНФОРМАЦИЯ ОБ ОПЛАТЕ</a>
+                        </div>
+                        <div class="cart__total">
+                            <div class="cart__total-item">
+                                <p class="cart__total-title">ДОСТАВКА:</p>
+                                <div class="cart__total-value" id="total-derilery">По тарифам перевозчика</div>
+                            </div>
+                            <div class="cart__total-item">
+                                <p class="cart__total-title">БОНУСЫ:</p>
+                                <div class="cart__total-value">- <span id="total-bonus">0</span> грн</div>
+                            </div>
+                            <div class="cart__total-item">
+                                <p class="cart__total-title">ИТОГО:</p>
+                                <div class="cart__total-value"> <span id="total">0</span> грн</div>
+                            </div>
+                        </div>
+                        <button class="cart__total-btn">ОФОРМИТЬ ЗАКАЗ</button>
+                        <div class="privacy-policy">Нажимая на кнопку «оплатить заказ», я принимаю условия <a
+                                href="#">публичной оферты</a> и <a href="#">политики конфиденциальности</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--= include footer.html -->
