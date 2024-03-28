@@ -701,6 +701,9 @@
     .privacy-policy a{
         text-decoration: underline;
     }
+    &__total-value span{
+        @extend %font-bold;
+    }
 }
 
 .checkout-form{

@@ -164,6 +164,7 @@ const setTotalPrice = (value) => {
   totalPriceWrapper.textContent = formatNumber(value);
   totalPriceWrapper.dataset.value = value;
   totalSum.innerHTML = totalPriceWrapper.dataset.value;
+  totalSum.innerHTML = formatNumber(value);
 }
 
 const init = () => {
@@ -240,7 +241,7 @@ sumOfBonus.addEventListener( "change", getSum);
 
 function getSum(event) {
   totalBonus.innerHTML = Number(event.target.value);
-  totalSum.innerHTML = totalPriceWrapper.dataset.value - totalBonus.innerHTML;
+  totalSum.innerHTML = formatNumber(totalPriceWrapper.dataset.value - totalBonus.innerHTML);
 }
 
 //product images
